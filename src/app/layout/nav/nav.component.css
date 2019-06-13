@@ -7,6 +7,16 @@ body {
   padding-top: 56px;
 }
 
+.button{
+  visibility: hidden;
+}
+
+@media (max-width:990px){
+  .button{
+    visibility: visible;
+  }
+}
+
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
@@ -28,6 +38,7 @@ body {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+
 }
 
 .nav-scroller {
@@ -74,3 +85,5 @@ body {
 .lh-100 { line-height: 1; }
 .lh-125 { line-height: 1.25; }
 .lh-150 { line-height: 1.5; }
+
+

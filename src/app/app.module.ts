@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { CustomMaterialModule } from './_helpers/custom-material/custom-material.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { FooterComponent } from './layout/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    CustomMaterialModule,
     AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

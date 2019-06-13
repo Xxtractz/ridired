@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   open = '';
+  menu = 'menu';
   constructor() { }
 
   ngOnInit() {
@@ -15,8 +16,10 @@ export class NavComponent implements OnInit {
   offcanvas(){
     if (this.open === ''){
       this.open = 'open';
+      this.menu = 'close';
     } else{
       this.open = '';
+      this.menu = 'menu';
     }
   }
 
